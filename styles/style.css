@@ -101,26 +101,180 @@ color: white;
 }
 .paragraph-2{
  
-  display: flex;
-  color: aliceblue;
-  justify-content: center;
+font-size: 18px;
+margin-bottom: 40px;
+color: #ccc;
+}
+.main-description{
+  max-width: 1200PX;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+.heading{
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 .about-gym{
   display: flex;
-  color: white;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+.gym{
+  width: 200px;
+ margin-bottom: 40px;
+ text-align: center;
+}
+.pic-2
+{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.gym-title{
+  font-size: 22px;
+  margin: 20px 0 10px;
+}
+.gym-discription{
+  font-size: 14px;
+  color: #ccc;
 }
 .Gym-Run{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:40px;
+  margin: 0 auto;
   color: white;
-  background-color:gray;
+  background: rgb(34, 34, 34);;
+  width: auto 1060px;
+  height: fixed 371px;
 }
-.run-pic{
-  height: 200px;
-  width: 350px;
+.gym-text{
+  max-width: 600px;
+}
+.gym-heading{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.header-description{
+  font-size: 18PX;
+  margin-bottom: 30PX;
+  line-height: 1.5;
+}
+.join-button{
+background-color: #ff5722;
+color: #fff;
+padding: 15px 30px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+font-size: 18px;
+}
+.image-section{
+
+  width: fixed 366px;
+  height: fixed 312px;
+  border-radius: 18px;
 }
 .Traing-section{
   color: white;
 }
-.BMI-section{
-color: white;
+.BMI-Chart{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+.BMI-section,.BMI-calculator{
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 45%;
+}
+.BMI-heading{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table,th,td{
+  border: 1px solid #444;
+}
+th,td{
+  padding: 10px;
+  text-align: left;
+}
+.BMI-calculator form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.BMI-calculator input,.BMI-calculator select{
+ padding: 10px;
+ background-color: #444;
+ color: #fff;
+ border: none;
+ border-radius: 4px;
+ font-size: 16px;
+}
+.BMI-calculator button {
+  grid-column: span 2;
+  padding: 15px;
+  background-color: #f04c3e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.BMI-calculator button:hover{
+ background-color: #e03c2e;
+}
+.footer-part{
+display: flex;
+justify-content: space-between;
+width: 90%;
+background: rgba(255, 255, 255, 0.1);
+}
+.footer-left{
+  max-width: 40%;
+}
+.fit-header{
+  font-size: 5rem;
+  font-weight: bold;
+  color: #FF5A3C;
+  margin-bottom: 20px;
+}
+.paragraph-3{
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.5;
+}
+.footer-right{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.Column{
+  margin-right: 50px;
+}
+.col-1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+.col-ul{
+  list-style-type: none;
+  padding: 0;
+}
+.Column ul li{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
 }
