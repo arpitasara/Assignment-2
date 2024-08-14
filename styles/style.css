@@ -413,7 +413,7 @@ font-size: 18px;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: end;
- color: white;
+  color: white;
 }
 .img-layout-4{
   position: absolute;
@@ -499,6 +499,7 @@ table,th,td{
 th,td{
   padding: 10px;
   text-align: left;
+  color: rgb(102, 97, 97);
 }
 .BMI-calculator form{
   display: grid;
@@ -556,7 +557,6 @@ th,td{
   justify-items: center;
 align-self: center;
 margin: auto;
-
 }
 
 .team-mamber{
@@ -568,24 +568,25 @@ margin: auto;
  border-radius: 18px;
 
 }
-.team-img-1{
+.team-img{
  width: 100%;
  height: 100%;
  margin: 20px;
  border-radius: 18px;
 }
-.team-info-1{
+.team-info{
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .team-header{
   margin: 0;
   font-size: 24px;
 }
-.team-descrip-1{
+.team-descrip{
   margin: 5px 0 0;
   font-size: 16px;
   color: #ccc;
@@ -642,18 +643,36 @@ margin: auto;
     color: rgba(255, 255, 255, 0.5);
     justify-content: center;
   }
-  @media screen and (max-width: 576px){
-    .Full-background{
-      width: 100%;
-      padding: 0 20px;
+
+  @media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-distance{
-      flex-direction: column;
+
+    .nav-title {
+        font-size: 20px;
+        margin-bottom: 10px;
     }
-    .Banner-picture{
-      flex-direction: column;
-      gap: 10px;
+
+    .nav-distance {
+        flex-direction: column;
+        width: 100%;
     }
-  }
-    
+
+    .nav-discription {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .nav-discription a {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+  
+  
   
