@@ -582,15 +582,31 @@ margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.team-header{
-  margin: 0;
-  font-size: 24px;
+
+/* .team-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: start;
+  justify-content: right;
+  color: white;
 }
 .team-descrip{
-  margin: 5px 0 0;
-  font-size: 16px;
-  color: #ccc;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: start;
+  justify-content: right;
+  color: white;
+}  */
 .footer-part{
   display: flex;
   justify-content: space-between;
@@ -644,34 +660,160 @@ margin: auto;
     justify-content: center;
   }
 
-  @media screen and (max-width: 576px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+  @media (max-width: 576px) {
     .nav-title {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 24px;
+        margin-left: 10px;
     }
-
-    .nav-distance {
+  
+    nav ul {
         flex-direction: column;
-        width: 100%;
+        align-items: center;
     }
-
+  
+    nav ul li {
+        margin: 0;
+    }
+  
     .nav-discription {
-        width: 100%;
+        padding: 10px 20px;
+    }
+  
+    .Banner {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        margin-bottom: 5px;
     }
-
-    .nav-discription a {
-        display: block;
+  
+    .Banner-description, .Banner-picture {
+        width: 100%;
+        margin: 0;
+    }
+  
+    .Banner-text {
+        font-size: 36px;
+    }
+  
+    .Banner-Button {
+        width: 100%;
+        margin: 10px 0;
+    }
+  
+    .Gym-Run, .Traing-section, .BMI-Main, .Meet-section {
+        padding: 20px;
         width: 100%;
     }
-}
-
+  
+    .traning-img {
+        flex-direction: column;
+    }
+  
+    .img-item-1, .img-item-2, .img-item-3, .img-item-4, .img-item-5, .img-item-6 {
+        width: 100%;
+        height: auto;
+    }
+  
+    .team-mamber {
+        width: 100%;
+    }
+    .BMI-Chart, .BMI-calculator {
+      width: 100%;
+      margin: auto; 
+      padding: 20px;
+      background-color: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: block;
+    }
+  
+    .BMI-Chart {
+      margin-bottom: 20px; 
+    }
+  
+    .BMI-calculator {
+      margin-top: 20px; 
+    }
+    .footer-right {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .Column {
+        margin-bottom: 20px;
+    }
+  
+    .Column ul {
+        padding: 0;
+        text-align: center;
+    }
+  
+    .Column li {
+        margin: 10px 0;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-title {
+        font-size: 30px;
+    }
+  
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .nav-discription {
+        padding: 15px 25px;
+    }
+  
+    .Banner {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .Banner-description, .Banner-picture {
+        width: 100%;
+    }
+  
+    .Banner-text {
+        font-size: 48px;
+    }
+  
+    .Banner-Button {
+        width: 45%;
+        margin: 10px;
+    }
+  
+    .Gym-Run {
+        flex-direction: column;
+        text-align: center;
+       
+    }
+  
+    .image-section {
+        width: 100%;
+    }
+  
+    .traning-img {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    .img-item-1, .img-item-2, .img-item-3, .img-item-4, .img-item-5, .img-item-6 {
+        width: 48%;
+        height: auto;
+    }
+  
+    .footer-right {
+        flex-direction: column;
+    }
+  
+    .Column ul {
+        padding: 0;
+        text-align: center;
+    }
+  }
 
   
   
